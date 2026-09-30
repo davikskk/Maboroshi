@@ -51,8 +51,8 @@ height: 2px}
     font-family: "Playfair Display", serif;
 }
 
-.banner h1{ font-size: clamp(3rem, 12vw,8rem); animation: aparecer 2s}
-.banner h2{ font-size: 2rem; animation: aparecer 4s}
+.banner h1{font-size: clamp(3rem, 12vw,8rem); animation: aparecer 2s}
+.banner h2{font-size: 2rem; animation: aparecer 4s}
 
 .content{width: 100%;
 padding: 30px;
@@ -85,10 +85,7 @@ flex-wrap: wrap;
 cursor: pointer
 }
 
-/*Ajuste manual*/
-.personagem img[src*="itsumi"]{ object-position: 75% center }
-.personagem img[src*="mamoru"]{ object-position: 85% center }
-.personagem img[src*="yasunari" i]{ object-position: 25% center }
+
 
 .fundopreto{
 height: 300px;
@@ -108,7 +105,8 @@ pointer-events: none;
 
 .sair{transform: rotate(90deg);
 font-family: "Noto Sans JP", sans-serif;
-font-size: 4rem}
+font-size: 4rem;
+visibility: hidden}
 
 .fundopreto p{font-size: 3rem}
 
@@ -175,6 +173,9 @@ body:has(dialog[open]) {
 
     .personagem{height: 230px;
     width: 230px}
+
+    .sair{visibility: visible};
+
 }
 
 /*Sem efeito para celular*/
@@ -184,6 +185,7 @@ body:has(dialog[open]) {
     }
 
     .personagem:hover .fundopreto{opacity: 1}
+
 }
 
 @starting-style {
