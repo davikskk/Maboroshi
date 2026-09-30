@@ -81,7 +81,8 @@ object-fit: cover;
 object-position: center;
 display: block;
 transition: all 0.7s;
-flex-wrap: wrap
+flex-wrap: wrap;
+cursor: pointer
 }
 
 /*Ajuste manual*/
@@ -135,7 +136,8 @@ dialog img{height: 100px;
 width: auto}
 
 dialog .banner{height: 200px;
-width: 100%;}
+width: 100%;
+overflow: hidden}
 
 dialog::backdrop{background-color: rgba(0, 0, 0, 0.644);
 backdrop-filter: blur(15px);
@@ -144,6 +146,10 @@ transition: all 0.5s}
 
 dialog h1{font-size: 2rem}
 dialog h2{font-size: 1rem}
+
+body:has(dialog[open]) {
+  overflow: hidden;
+}
 
 /*fim do dialog*/
 
@@ -184,3 +190,5 @@ dialog h2{font-size: 1rem}
         opacity: 0
     }
 }
+
+#sair{cursor: pointer}
