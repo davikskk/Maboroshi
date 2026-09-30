@@ -1,3 +1,4 @@
+/*Elementos padrões do html*/
 body{width: 100vw;
 height: 100vh;
 margin: 0;
@@ -16,6 +17,8 @@ font-weight: 400;}
 hr{width: 50%;
 margin: 0;
 height: 2px}
+
+/*Classes*/
 
 .banner {
     width: 100%;
@@ -115,6 +118,11 @@ visibility: hidden}
 grid-area: 1 / 1;
 }
 
+.link{width: 100vw;
+color: white;
+display: flex;
+justify-content: center}
+
 /*Dialog*/
 
 dialog{height: 500px;
@@ -153,7 +161,7 @@ body:has(dialog[open]) {
   overflow: hidden;
 }
 
-/*fim do dialog*/
+/*Todos os @*/
 
 @keyframes aparecer{
     from{opacity: 0; transform: translateY(20px)}
@@ -196,5 +204,7 @@ body:has(dialog[open]) {
         opacity: 0
     }
 }
+
+/*IDs*/
 
 #sair{cursor: pointer}
