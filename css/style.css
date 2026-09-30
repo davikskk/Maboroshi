@@ -106,6 +106,10 @@ transition: all 0.2s;
 pointer-events: none;
 }
 
+.sair{transform: rotate(90deg);
+font-family: "Noto Sans JP", sans-serif;
+font-size: 4rem}
+
 .fundopreto p{font-size: 3rem}
 
 .personagem img,
