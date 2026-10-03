@@ -121,7 +121,10 @@ grid-area: 1 / 1;
 .link{width: 100vw;
 color: white;
 display: flex;
-justify-content: center}
+justify-content: center;
+transition: all 0.5s ease}
+
+.link:hover{transform: scale(1.5)}
 
 /*Dialog*/
 
